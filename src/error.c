@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmendes <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jmendes <jmendes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 11:55:23 by jmendes           #+#    #+#             */
-/*   Updated: 2021/10/17 19:30:07 by jmendes          ###   ########.fr       */
+/*   Updated: 2022/09/29 03:15:43 by jmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 void	error(t_img *s_img, char *message)
 {

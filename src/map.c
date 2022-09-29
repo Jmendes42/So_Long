@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   map.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmendes <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jmendes <jmendes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 12:12:52 by jmendes           #+#    #+#             */
-/*   Updated: 2021/10/21 11:01:51 by jmendes          ###   ########.fr       */
+/*   Updated: 2022/09/29 03:16:12 by jmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 int	open_map(t_img *s_img)
 {

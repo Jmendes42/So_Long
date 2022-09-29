@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   movePlayer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmendes <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jmendes <jmendes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 10:38:45 by jmendes           #+#    #+#             */
-/*   Updated: 2021/10/18 13:00:44 by jmendes          ###   ########.fr       */
+/*   Updated: 2022/09/29 03:16:19 by jmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 void	move_r(t_img *s_img, int keycode)
 {
-	s_img->s_player.path = "images/chompyR.xpm";
+	s_img->s_player.path = "../images/chompyR.xpm";
 	if (s_img->s_map.map[s_img->s_player.y][s_img->s_player.x + 1] == '0'
 			|| s_img->s_map.map[s_img->s_player.y][s_img->s_player.x + 1] == 'C'
 			|| (s_img->s_map.map[s_img->s_player.y][s_img->s_player.x + 1]
@@ -37,7 +37,7 @@ void	move_r(t_img *s_img, int keycode)
 
 void	move_l(t_img *s_img, int keycode)
 {
-	s_img->s_player.path = "images/chompyL.xpm";
+	s_img->s_player.path = "../images/chompyL.xpm";
 	if (s_img->s_map.map[s_img->s_player.y][s_img->s_player.x - 1] == '0'
 			|| s_img->s_map.map[s_img->s_player.y][s_img->s_player.x - 1] == 'C'
 			|| (s_img->s_map.map[s_img->s_player.y][s_img->s_player.x - 1]
@@ -66,7 +66,7 @@ void	move_u(t_img *s_img, int keycode, int control)
 		s_img->s_map.map[s_img->s_player.y][s_img->s_player.x] = '0';
 		s_img->pos_x = s_img->s_player.pos_x;
 		s_img->pos_y = s_img->s_player.pos_y;
-		put_img(s_img, "images/wall.xpm");
+		put_img(s_img, "../images/wall.xpm");
 		s_img->pos_y -= 64;
 		put_img(s_img, s_img->s_player.path);
 		s_img->s_player.y--;

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmendes <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jmendes <jmendes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 11:48:19 by jmendes           #+#    #+#             */
-/*   Updated: 2021/10/17 18:23:53 by jmendes          ###   ########.fr       */
+/*   Updated: 2022/09/29 03:16:03 by jmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 static int	elsa(int index, int fd, char **saved, char **line)
 {

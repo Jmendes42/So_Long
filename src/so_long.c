@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmendes <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jmendes <jmendes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 16:51:01 by jmendes           #+#    #+#             */
-/*   Updated: 2021/10/18 13:00:30 by jmendes          ###   ########.fr       */
+/*   Updated: 2022/09/29 03:16:38 by jmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 void	put_sprite(t_img *s_img, char *path)
 {
@@ -35,9 +35,9 @@ void	margins(t_img *s_img, int control)
 		while (s_img->s_map.map[0][s_img->s_map.x] == '1')
 		{
 			if (!s_img->s_map.map[0][s_img->s_map.x + 1])
-				put_img(s_img, "images/grass3.XPM");
+				put_img(s_img, "../images/grass3.XPM");
 			else
-				put_img(s_img, "images/grassup.XPM");
+				put_img(s_img, "../images/grassup.XPM");
 			s_img->pos_x += s_img->width;
 			s_img->s_map.x++;
 		}
@@ -47,9 +47,9 @@ void	margins(t_img *s_img, int control)
 		while (s_img->s_map.map[s_img->s_map.y][s_img->s_map.x] == '1')
 		{
 			if (!s_img->s_map.map[s_img->s_map.y][s_img->s_map.x + 1])
-				put_img(s_img, "images/grass4.XPM");
+				put_img(s_img, "../images/grass4.XPM");
 			else
-				put_img(s_img, "images/grassdown.XPM");
+				put_img(s_img, "../images/grassdown.XPM");
 			s_img->pos_x += s_img->width;
 			s_img->s_map.x++;
 		}

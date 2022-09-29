@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmendes <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jmendes <jmendes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 15:45:38 by jmendes           #+#    #+#             */
-/*   Updated: 2021/10/17 18:21:57 by jmendes          ###   ########.fr       */
+/*   Updated: 2022/09/29 03:16:09 by jmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 void	init_map1(t_img *s_img, t_list *list)
 {
@@ -56,7 +56,7 @@ void	init_player(t_img *s_img)
 	s_img->s_player.width = 0;
 	s_img->s_player.height = 0;
 	s_img->s_player.img = 0;
-	s_img->s_player.path = "images/chompyR.xpm";
+	s_img->s_player.path = "../images/chompyR.xpm";
 }
 
 void	init_sprite(t_img *s_img)
@@ -68,7 +68,7 @@ void	init_sprite(t_img *s_img)
 	s_img->s_sprite.width = 0;
 	s_img->s_sprite.height = 0;
 	s_img->s_sprite.img = 0;
-	s_img->s_sprite.path = "images/reaperL.xpm";
+	s_img->s_sprite.path = "../images/reaperL.xpm";
 }
 
 void	init_img(t_img *s_img)
