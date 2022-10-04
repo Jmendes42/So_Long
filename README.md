@@ -2,7 +2,7 @@
 
 So Long is a basic 2D game.
 
-It is made on a graphic 42 library called MLX, and written on C.
+It is made on a graphic 42 library called MLX, and written in C.
 
 The objective is to catch all the items in the map, without running into the enemy, and get to the exit and win.
 
